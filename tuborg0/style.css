@@ -296,6 +296,7 @@ span {
 .text_campaign h1 {
     margin: 0;
     font-size: 3rem;
+    padding-top: 0;
 }
 
 .text_campaign p {
@@ -329,7 +330,8 @@ span {
 
 /**************** DIAGRAM **************/
 #barchart {
-    max-width: 500px;
+    max-width: 600px;
+    min-width: 400px;
 }
 
 #chart line {
