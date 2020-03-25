@@ -227,7 +227,7 @@ span {
 }
 
 
-/*----------------  BURGER MENU -----------------*/
+/*----------------  LOGO -----------------*/
 
 .logo {
     justify-content: center;
@@ -242,11 +242,11 @@ span {
 }
 
 
-/**************MOBIL VERSION AF PLAKAT OG TEKST AFSNIT*************/
+/**************MOBIL *************/
 
 #campaign_text_img {
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -261,13 +261,19 @@ span {
     width: 100%;
 }
 
+.text_campaign h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+
 .text_campaign {
     display: flex;
     flex-grow: 2;
     flex-basis: 600px;
     flex-direction: column;
     align-items: center;
-    margin: 1em;
+    margin: 0 10px;
 }
 
 /*******************ANIMATION**********************/
@@ -326,30 +332,10 @@ span {
     height: 50px;
 }
 
-#tuborg_logo a {
-    margin: 1em;
-    border: none;
-    font-size: 1em;
-    text-decoration: none;
-    color: #fff;
-}
-
-#tuborg_logo a:hover {
-    color: #FAC177;
-    transition: 0.2s;
-}
-
-@media screen and (min-width:1000px) {
-
-    .poster img {
-        width: 50%;
-    }
-
-}
-
 
 #section_wrapper1 h1 {
     text-align: center;
+    margin: 0 10px;
 }
 
 
@@ -399,10 +385,18 @@ span {
         width: 37vw;
     }
 
+    #section_wrapper1 h1 {
+        margin: 10px;
+        font-size: 2rem;
+    }
 
 }
 
-
+@media screen and (min-width:800px) {
+    #section_wrapper1 h1 {
+        font-size: 3rem;
+    }
+}
 
 .fa {
     padding: 20px;
