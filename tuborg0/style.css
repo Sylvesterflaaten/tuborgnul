@@ -1,12 +1,11 @@
 body {
     background-image: linear-gradient(#0b4395, #07244e);
-    margin: auto;
-
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
 }
 
-
+/**********  TEXT SETTINGS  **************/
 h1 {
     font-family: 'Abril Fatface', cursive;
     color: white;
@@ -32,6 +31,13 @@ p {
     margin: 1.5rem;
 }
 
+span {
+    color: #FAC177
+}
+
+/*********  TEXT SLUT  **********/
+
+/********  SPLASH  *********/
 #beer img {
     width: 40%;
 }
@@ -49,11 +55,8 @@ p {
     display: none;
 }
 
-span {
-    color: #FAC177
-}
 
-/*    MEDIA QUERY TIL WEB    */
+/**********  MEDIA QUERY TIL WEB SPLASH  **********/
 @media screen and (min-width:800px) {
     #campaign {
         display: flex;
@@ -90,9 +93,10 @@ span {
 
 }
 
+/**********  SPLASH SLUT  **********/
 
 
-
+/**************  INTERAKTIV DEL  ***************/
 .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
@@ -215,7 +219,7 @@ span {
 }
 
 
-/************ MEDIA QUERIES **************/
+/************ MEDIA QUERIES INTERAKTIV **************/
 
 @media only screen and (min-width: 800px) {
     .hands {
@@ -226,8 +230,10 @@ span {
 
 }
 
+/*INTERAKTIV DEL SLUT*/
 
-/*----------------  LOGO -----------------*/
+
+/****************  LOGO ***************/
 
 .logo {
     justify-content: center;
@@ -241,8 +247,34 @@ span {
     width: 15%;
 }
 
+.logo img {
+    width: 30px;
 
-/**************MOBIL *************/
+}
+
+.logo {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2rem;
+    color: white;
+}
+
+#tuborg_logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #FAC177;
+    height: 50px;
+}
+
+/**************  LOGO SLUT  *************/
+
+
+
+/**************  VÆKST SEGMENT  *************/
 
 #campaign_text_img {
     display: flex;
@@ -276,26 +308,8 @@ span {
     margin: 0 10px;
 }
 
-/*******************ANIMATION**********************/
-.drop {
-    animation-name: drop_kf;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-}
 
-@keyframes drop_kf {
-    from {
-        transform: translateY(-20vw);
-    }
-
-    to {
-        transform: translateY(3vw);
-    }
-}
-
-/*****************MEDIA QUERIES******************/
+/*****************  MEDIA QUERIES VÆKST  ******************/
 
 @media screen and (min-width: 500px) {
 
@@ -308,30 +322,38 @@ span {
     }
 }
 
-
-.logo img {
-    width: 30px;
-
+/**************** DIAGRAM **************/
+#barchart {
+    max-width: 500px;
 }
 
-.logo {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 2rem;
-    color: white;
+#chart line {
+    stroke: #fff;
+    stroke-width: .5;
 }
 
-#tuborg_logo {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #FAC177;
-    height: 50px;
+#chart text {
+    font-size: .4rem;
+    fill: white;
+    font-family: sans-serif;
 }
 
+.bars {
+    stroke-width: 20;
+    stroke: #FAC177;
+}
+
+.bars line:hover {
+    stroke: #dda154;
+}
+
+/************ DIAGRAM SLUT **********/
+
+/**************  VÆKST SEGMENT SLUT  *************/
+
+
+
+/**************  SMAGEN AF ØL  *************/
 
 #section_wrapper1 h1 {
     text-align: center;
@@ -357,7 +379,7 @@ span {
     margin-bottom: 1px;
 }
 
-/*******WEB VERSION*******/
+/*******  WEB VERSION SMAG  *******/
 @media screen and (min-width:500px) {
 
     #section_wrapper1 {
@@ -398,6 +420,52 @@ span {
     }
 }
 
+/**************  SMAGEN AF ØL SLUT  *************/
+
+
+/**************  KAMPAGNEVIDEO  *************/
+
+
+.overskrift {
+    text-align: center;
+    color: white;
+
+}
+
+.kampagnevideo {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.kampagnevideo h1 {
+    border-bottom: 0;
+}
+
+
+@media only screen and (min-width:700px) {
+    .nyhed img {
+        height: 150px;
+    }
+
+    video {
+        width: 600px;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    video {
+        width: 800px;
+    }
+}
+
+/**************  KAMPAGNEVIDEO SLUT  *************/
+
+
+
+/**************  FOOTER  *************/
 .fa {
     padding: 20px;
     font-size: 20px;
@@ -423,24 +491,6 @@ span {
     color: white;
 }
 
-.overskrift {
-    text-align: center;
-    color: white;
-
-}
-
-.kampagnevideo {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: auto;
-}
-
-.kampagnevideo h1 {
-    border-bottom: 0;
-}
-
 .nyhed img {
     height: 100px;
     justify-content: center;
@@ -458,28 +508,13 @@ footer {
     display: flex;
 }
 
-
-
-
-@media only screen and (min-width:700px) {
-    .nyhed img {
-        height: 150px;
-    }
-
-    video {
-        width: 600px;
-    }
-}
-
-@media only screen and (min-width:900px) {
-    video {
-        width: 800px;
-    }
-}
-
 .some {
     padding: 0 20px;
 }
+
+/**************  FOOTER SLUT  *************/
+
+
 
 .streg {
     margin: 50px;
@@ -489,32 +524,3 @@ footer {
     align-items: center;
     text-align: center;
 }
-
-
-/**************** diagram **************/
-
-#barchart {
-    max-width: 500px;
-}
-
-#chart line {
-    stroke: #fff;
-    stroke-width: .5;
-}
-
-#chart text {
-    font-size: .4rem;
-    fill: white;
-    font-family: sans-serif;
-}
-
-.bars {
-    stroke-width: 20;
-    stroke: #FAC177;
-}
-
-.bars line:hover {
-    stroke: #dda154;
-}
-
-/************ diagram slut **********/
