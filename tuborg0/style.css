@@ -298,6 +298,11 @@ span {
     font-size: 3rem;
 }
 
+.text_campaign p {
+    margin-top: 0px;
+    max-width: 75ch;
+}
+
 
 .text_campaign {
     display: flex;
